@@ -2,6 +2,8 @@
 
 Money over time is an idea to model / plan finances in context of time.
 
+![Money over time screenshot](./screenshot.png)
+
 ## The goal
 
 Whole point of that idea is to allow user to predict her / his finances in any point of time and answer this kind of questions:
