@@ -1,0 +1,13 @@
+.DS_Store
+.env
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.cache
+node_modules
+/coverage
+/build
+/public/build
+/tmp
+.cache
+.serviceAccountKey

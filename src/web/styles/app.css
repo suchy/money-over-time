@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+details > summary.list-none::marker {
+  display: none;
+}
+
+.dotted-background {
+  --dot-background: rgb(243 244 246);
+  --dot-color: rgb(229 231 235);
+
+  @apply bg-gray-100;
+  background-repeat: repeat;
+  position: relative;
+  background-image: linear-gradient(
+      to bottom,
+      transparent,
+      transparent 10%,
+      var(--dot-background) 10%,
+      var(--dot-background) 99%,
+      transparent 99%
+    ),
+    linear-gradient(
+      to right,
+      transparent,
+      transparent 10%,
+      var(--dot-background) 10%,
+      var(--dot-background) 99%,
+      transparent 99%
+    ),
+    linear-gradient(
+      to right,
+      var(--dot-color),
+      var(--dot-color) 10%,
+      var(--dot-background) 10%,
+      var(--dot-background) 99%,
+      var(--dot-color) 99%
+    );
+  background-size: 30px 30px;
+}
